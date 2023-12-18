@@ -25,7 +25,7 @@ int main() {
     for (i = 0; i < size; i++) {
 
         if (*(AdrMax + i) >= max) {
-            max = (*(AdrMax + i));
+            max = (*(AdrMax + i));          // Визначення максимального значення і його позиції в масиві
             a = i;
         }
     }
@@ -33,20 +33,20 @@ int main() {
     for (i = 0; i < size; i++) {
 
         if (*(AdrMin + i) < min) {
-            min = (*(AdrMin + i));
+            min = (*(AdrMin + i));          // Визначення мінімального значення і його позиції в масиві
             b = i;
         }
 
     }
 
-    vidstan = abs(a - b);
+    vidstan = abs(a - b);                   // Розрахунок відстані між елементами
 
 
 
-    for (i = 0; i < size; i++) {
-        printf("max: %d   min: %d   Vidstan mij elementamu: %d\n", max, min, vidstan);
+    
+        printf("max: %d   min: %d   \nVidstan mij elementamu: %d\n", max, min, vidstan);         // Вивід результатів
 
-    }
+    
 
 
     return 0;
